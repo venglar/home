@@ -1,0 +1,27 @@
+{% extends 'base.html'|pjax:request %}
+{% load staticfiles %}
+{% block title %}hola{% endblock %}
+{% block content %}
+<div class="col-xs-12">
+    <h1>Hi. I'm Andrew.</h1>
+
+</div>
+<div class="col-sm-6">
+    <h1>I make websites.</h1>
+    <div class="content">
+        <p>I've been making websites since the ripe old age of 6 years old,
+        and have very little intention of stopping now.</p>
+        <p>I specialize in PHP and Python, specifically using Magento / Laravel
+        and Django, respectively. These are not limitations - I've been known to
+        dabble in a little bit of everything as the need presents itself.</p>
+        <img src="{% static 'images/gosolid.gif' %}" class="pull-left" style="margin: 10px"/>
+        <p>Currently, I'm working with the best team of Magento developers that
+        Seattle has to offer: GoSolid. We specialize in Magento-based platforms,
+        serving clients all over the world and bringing them authoritative knowledge of Magento and
+        the e-commerce industry. We've been doing this for five years.</p>
+    </div>
+</div>
+<div class="col-sm-6">
+    <h1>yo sup</h1>
+</div>
+{% endblock %}

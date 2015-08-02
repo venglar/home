@@ -1,0 +1,84 @@
+#logo {
+    text-align: center;
+    height: 200px;
+    background: white;
+
+}
+#logo a {
+    font-size: 104px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+    color: #666;
+    display: block;
+    padding: 20px 0 ;
+    margin: auto;
+}
+#logo span {
+    font-size: 24px;
+    position: relative;
+    top: -65px;
+    right: -90px;
+    font-weight: 600;
+    pointer-events:none;
+}
+@media(max-width: 768px) {
+    #logo a {
+        padding: 40px 0 80px 0;
+        font-size: 4em;
+        background: url('/static/images/skyline.png') top center no-repeat;
+    }
+    #logo span {
+        font-size: 1.5em;
+        position: relative;
+        top: -90px;
+        right: inherit;
+    }
+}
+#logo a:hover, #logo a:focus, #logo a:active {
+  color: black;
+  text-decoration: none;
+}
+@media(min-width: 692px) {
+    #logo a {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+    #logo a:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 200px;
+        background: url('/static/images/skyline.png') top center no-repeat;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    #logo a:hover:before, #logo a:focus:before, #logo a:active:before {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
+}

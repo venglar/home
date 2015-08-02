@@ -1,0 +1,70 @@
+nav.main {
+    text-align: center;
+    font-size: 1.7em;
+    background: rgba(200, 200, 200, 1);
+}
+nav.main a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+nav.main a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+@media(max-width: 768px){
+    nav.main {
+        text-align: center;
+        font-size: 1em;
+        background: rgba(200, 200, 200, 1);
+        padding: 0;
+    }
+    .navbar-toggle {
+        float: none;
+        margin: 10px auto;
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+        background: none;
+    }
+}
+nav.main a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #2098d1;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+nav.main a:hover:before, nav.main a:focus:before, nav.main a:active:before {
+  left: 0;
+  right: 0;
+}
+
+/* Bootstrap overrides */
+
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default, .navbar-default .navbar-collapse {
+    border-radius: 0;
+    border: 0;
+}
+.navbar-toggle {
+    border: 0;
+}

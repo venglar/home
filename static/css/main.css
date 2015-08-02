@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Jura:400,600);
+
+@import url('/static/css/components/logo.css');
+@import url('/static/css/components/nav.css');
+@import url('/static/css/components/wrapper.css');
+
+
+body {
+    background: rgba(225,225,225,1);
+    font-family: 'Jura', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
