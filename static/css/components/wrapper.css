@@ -1,6 +1,6 @@
 #wrapper {
       position: absolute;
-      height: 100%;
+      height: calc(100% - 250px);
       width: 100%;
       -webkit-perspective: 100%;
          -moz-perspective: 100%;
