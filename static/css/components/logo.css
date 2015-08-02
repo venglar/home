@@ -2,7 +2,7 @@
     text-align: center;
     height: 200px;
     background: white;
-
+    font-family: 'Jura', sans-serif;
 }
 #logo a {
     font-size: 104px;
@@ -26,7 +26,7 @@
 @media(max-width: 768px) {
     #logo a {
         padding: 40px 0 80px 0;
-        font-size: 4em;
+        font-size: 3.5em;
         background: url('/static/images/skyline.png') top center no-repeat;
     }
     #logo span {
