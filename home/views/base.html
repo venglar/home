@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Andrew Venglar - {% block title %}Home{% endblock %}</title>
+    <title>{% block title %}Andrew Venglar - Home{% endblock %}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <script src="{% static 'js/libraries/jquery.min.js' %}"></script>
@@ -18,15 +18,7 @@
 </div>
 <nav class="main navbar navbar-default">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <div id="navbar" class="navbar" aria-expanded="false" style="height: 1px;">
             <ul class="nav navbar-nav">
                 <li><a href="{% url 'home' %}">Home</a></li>
                 <li><a href="{% url 'portfolio' %}">About</a></li>
@@ -36,8 +28,7 @@
     </div><!--/.container-fluid -->
 </nav>
 <div id="wrapper">
-    <div id="trans-wrap">
-        <figure id="wrap-front">{% block content %}{% endblock %}</figure>
+        {% block content %}{% endblock %}</figure>
         <figure id="wrap-back"></figure>
     </div>
 </div>

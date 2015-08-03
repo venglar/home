@@ -1,7 +1,10 @@
 nav.main {
     text-align: center;
-    font-size: 1.7em;
-    background: rgba(200, 200, 200, 1);
+    font-size: 1.3em;
+    background: white !important;
+    border: 1px top rgba(200, 200, 200, 1) !important;
+    font-family: 'Jura', sans-serif;
+    text-align: center;
 }
 nav.main a {
     margin: 0 20px;
@@ -19,21 +22,6 @@ nav.main a {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
   overflow: hidden;
-}
-@media(max-width: 768px){
-    nav.main {
-        text-align: center;
-        font-size: 1em;
-        background: rgba(200, 200, 200, 1);
-        padding: 0;
-    }
-    .navbar-toggle {
-        float: none;
-        margin: 10px auto;
-    }
-    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
-        background: none;
-    }
 }
 nav.main a:before {
   content: "";
@@ -61,10 +49,33 @@ nav.main a:hover:before, nav.main a:focus:before, nav.main a:active:before {
 .navbar {
     margin-bottom: 0;
 }
+.navbar-nav, .navbar-nav > li {
+    float: none;
+    display: inline;
+}
 .navbar-default, .navbar-default .navbar-collapse {
     border-radius: 0;
     border: 0;
 }
 .navbar-toggle {
     border: 0;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    nav.main {
+        text-align: center;
+        font-size: 1em;
+        padding: 0;
+    }
+    nav.main a {
+        margin: -13px 0 0 0;
+    }
+    .navbar-toggle {
+        float: none;
+        margin: 10px auto;
+    }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+        background: none;
+    }
 }

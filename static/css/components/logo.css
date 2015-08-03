@@ -24,16 +24,21 @@
     pointer-events:none;
 }
 @media(max-width: 768px) {
+    #logo {
+        height: 75px;
+    }
     #logo a {
-        padding: 40px 0 80px 0;
-        font-size: 3.5em;
-        background: url('/static/images/skyline.png') top center no-repeat;
+        font-size: 2em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        cursor: pointer;
+        color: #666;
+        display: block;
+        margin: auto;
     }
     #logo span {
-        font-size: 1.5em;
-        position: relative;
-        top: -90px;
-        right: inherit;
+        display: none;
     }
 }
 #logo a:hover, #logo a:focus, #logo a:active {
@@ -63,6 +68,7 @@
         bottom: 0;
         height: 200px;
         background: url('/static/images/skyline.png') top center no-repeat;
+
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
         -webkit-transform-origin: 50% 100%;
